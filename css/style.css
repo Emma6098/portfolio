@@ -291,7 +291,7 @@ main {
 
 }
 .dropdown-content a {
-    padding-left: 5px;
+    padding-left: 10px;
 }
 ul {
     padding:0px;
@@ -329,15 +329,11 @@ ul {
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 70px;
     color: black;
     display: block;
     transition: 0.3s;
-  }
-
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: #f1f1f1;
+    margin-top: 50px;
   }
 
   /* Position and style the close button (top right corner) */
@@ -345,21 +341,10 @@ ul {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 70px;
     margin-left: 50px;
   }
 
-  /* The button used to open the sidebar */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: none;
-  }
-
-
-/* Fixé footbar */
 
   #conteneur-page {
     position: relative;
@@ -380,26 +365,60 @@ ul {
 
 @media screen and (max-width:1080px) {
 
+  .card-project {
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    width: 600px;
+    transition: transform 0.3s;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+
+  .card-project > a > img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: #9c9a9a 3px solid;
+  }
+
+  .card-project h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #242424;
+  }
+  .openbtn {
+    font-size: 60px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-right: 20px;
+  }
+  .card-project p {
+    font-size: 25px;
+    opacity: .7;
+    margin: 0;
+    color: #242424;
+  }
 
     main {
         animation-duration: 0s;
         animation-name: slidein;
+        font-size: 22px;
       }
 
-    p,h3, h2, ul {
-        font-size: smaller;
-    }
-    .carre-contenu p {
-        text-align: center;}
-
-    #p-accueil {
-        font-size: 1em;
-    text-align: left;}
-    h1{
-        font-size: 2em;
-    }
     section {
         padding: 50px 20px 50px 20px;
+        font-size: larger;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     nav {
         display: flex;
@@ -407,6 +426,7 @@ ul {
         justify-content: right;
         align-items: center;
         padding: 20px 20px 20px 90px;
+        height: 50px;
     }
     header nav img {
         margin-bottom: 20px;
@@ -418,15 +438,17 @@ ul {
       .dropdown-content {
         display: none;
         position: fixed;
-        left: 10px;
+        left: 100px;
         right: 150px;
-        top:70px;
+        top:200px;
         background-color:#F7ECE1;
         min-width: 70%;
         max-width: 200px;
+        height: 280px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 30px;
-        font-size: 0.8em;
+        font-size: 30px;
+
     }
 
     .show {display:block;}
@@ -434,15 +456,21 @@ ul {
     .dropbtn img {
 
         display: flex;
-        border-radius: 100px;
-        width: 80px;
-        height: 80px;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
         left: auto;
         top: auto;
         align-items: center;
         position: fixed;
         z-index: 4;
     }
+    .carre-contenu-accueil {
+      border-right: 2px solid #3a332c;
+      border-bottom: 3px solid #3a332c;
+      padding: 50px;
+      width: 50%;
+      margin: 20px auto 50px auto;}
 
     .dropdown-content li {
         color: black;
@@ -461,7 +489,27 @@ ul {
         padding-top: 70px;
     }
     .sidebar a {
-        font-size: 18px;
+        font-size: 40px;
     }
 
+
+    #pied-de-page {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
     }
+
+    .lien-icone{
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+
+    .cta{
+      padding: 40px 50px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+}
