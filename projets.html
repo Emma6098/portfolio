@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" >
     <title>Mes Projets - Emma Créteur</title>
-    <link href="style.css" rel="stylesheet" >
-    <script src="dropdown.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+        <script src="javascript/dropdown.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,32 +22,32 @@
         <div id="enveloppe-contenu">
             <header>
                 <nav>
-                    <div class="menu-responsive">
+                  <div class="menu-responsive">
 
-                        <button class="openbtn" onclick="openNav()">&#9776;</button>
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
                         <div id="mySidebar" class="sidebar">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                             <a href="index.html">Accueil</a>
                             <a href="experience.html">Mes Expériences professionnelles</a>
                             <a href="formation.html">Mes formation</a>
                             <a href="savoirs.html">Mes savoirs-être / savoirs-faire</a>
-                            <a href="Projets.html">Mes Projets</a>
+                            <a href="projets.html">Mes Projets</a>
                         </div>
+                  </div>
 
-                    </div>
-                    <div class="categories">
-                        <a href="index.html">Accueil</a>
-                        <a href="experience.html">Mes Expériences professionnelles</a>
-                        <a href="formation.html">Mes formation</a>
-                        <a href="savoirs.html">Mes savoirs-être / savoirs-faire</a>
-                        <a href="Projets.html">Mes Projets</a>
+                  <div class="categories">
+                      <a href="index.html">Accueil</a>
+                      <a href="experience.html">Mes Expériences professionnelles</a>
+                      <a href="formation.html">Mes formation</a>
+                      <a href="savoirs.html">Mes savoirs-être / savoirs-faire</a>
+                      <a href="projets.html">Mes Projets</a>
 
-                    </div>
+                  </div>
                 </nav>
 
                 <div class="dropdown">
 
-                    <button onclick="myFunction()" class="dropbtn"><img src ="Emma 3.jpg"
+                    <button onclick="myFunction()" class="dropbtn"><img src ="css/images/ppemma.jpg"
                             alt="photo-index" class="dropbtn"/></button>
 
                     <div id="myDropdown" class="dropdown-content">
@@ -70,18 +70,29 @@
 
                     <h1>Mes projets</h1>
 
-                    <p class="section-vide">Cette section est vide </p>
-
+                    <div class="card-project">
+                      <a href="https://blooming-woodland-84892-a15a70af19f6.herokuapp.com/" target="_blank">
+                      <img src="https://media.licdn.com/dms/image/sync/D4D27AQHtT2z1cxmr0g/articleshare-shrink_800/0/1694607228014?e=1695294000&v=beta&t=CfZKiXzo-Nj1pzVaW9pA2f9Ugo-Gu2Z51ZTtQYbrVnQ" />
+                      <div class="card-project-infos">
+                        <div>
+                          <h2>VisitForMe</h2>
+                          <p>VisitForMe est une application web mobile créée par mon équipe et moi-même en tant que projet de fin de formation. Cette application facilite le processus de visite d'un appartement en permettant aux utilisateurs de déléguer cette tâche à une personne de confiance.</p>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
                 </section>
             </main>
         </div>
 
-            <footer id = "pied-de-page">
-                <div>
-                    <a href="https://www.linkedin.com/in/emma-creteur-a72876180/" target="_blank" class="lien-icone"> <img src="https://static.vecteezy.com/system/resources/previews/018/930/585/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png"
-                    alt="logo linkedin"/> </a>
-                </div>
-            </footer>
+        <footer id="pied-de-page">
+          <div>
+              <a href="https://www.linkedin.com/in/emma-creteur" target="_blank"> <img class="lien-icone" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+              alt="logo linkedin"/> </a>
+              <a href="https://github.com/Emma6098" target="_blank"> <img class="lien-icone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png"
+                alt="logo github"/> </a>
+          </div>
+      </footer>
 
     </div>
 
