@@ -407,7 +407,12 @@ ul {
     main {
         animation-duration: 0s;
         animation-name: slidein;
-        font-size: 22px;
+        font-size: 30px;
+      }
+
+      #p-accueil {
+        font-size: 30px;
+        text-align: justify;
       }
 
     section {
