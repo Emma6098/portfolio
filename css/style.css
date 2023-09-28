@@ -160,6 +160,7 @@ nav,footer{
 }
 section{
     padding: 50px 80px 80px 80px;
+    margin-top: 200px;
 }
 
 
@@ -249,7 +250,7 @@ main {
     top:10px;
     align-items: center;
     position: fixed;
-    z-index: 4;
+    z-index: 200;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border: none;
     cursor: pointer;
@@ -512,4 +513,66 @@ ul {
       margin-bottom: 50px;
       font-size: 30px;
     }
+}
+
+
+hgroup {
+  position: relative;
+  transition: .15s ease all;
+  padding-top: 65px;
+}
+
+hgroup h1 {
+  font-weight: 300;
+  font-size: 4.5em;
+}
+
+hgroup h2 {
+  font-size: 1.25em;
+}
+
+#masthead.scrolled {
+  height: 65px;
+}
+
+#masthead.scrolled hgroup {
+  opacity: 0;
+  transform: translateY(-75px);
+}
+
+#masthead {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 300px;
+  background: white;
+  transition: .3s ease all;
+}
+
+a {
+  transition: .15s ease all;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+nav {
+  padding-top: 10px;
+  z-index: 1;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  margin: 0 5px;
+  color: black;
 }

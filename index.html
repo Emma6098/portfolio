@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title> index - Emma Créteur </title>
+        <title>Emma Créteur | Développeuse Fullstack </title>
 
         <link href="css/style.css" rel="stylesheet">
         <script src="javascript/dropdown.js"></script>
@@ -16,35 +16,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     </head>
 
     <body>
-
       <div id="conteneur-page">
           <div id="enveloppe-contenu">
-              <header>
-                  <nav>
+
+            <header id="masthead"><nav>
                       <div class="menu-responsive">
 
                           <button class="openbtn" onclick="openNav()">&#9776;</button>
                               <div id="mySidebar" class="sidebar">
-                                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                  <a href="index.html">Accueil</a>
-                                  <a href="experience.html">Mes Expériences professionnelles</a>
-                                  <a href="formation.html">Mes formations</a>
-                                  <a href="savoirs.html">Mes savoirs-être / savoirs-faire</a>
-                                  <a href="projets.html">Mes Projets</a>
+                                <ul class="anchors">
+                                  <li><a href="#home">À propos</a></li>
+                                  <li><a href="#competences">Compétences</a></li>
+                                  <li><a href="#portfolio">Portfolio</a></li>
+                                  <li><a href="#contact">Contact</a></li>
+                                </ul>
                               </div>
-                      </div>
-
-                      <div class="categories">
-                          <a href="index.html">Accueil</a>
-                          <a href="experience.html">Mes Expériences professionnelles</a>
-                          <a href="formation.html">Mes formations</a>
-                          <a href="savoirs.html">Mes savoirs-être / savoirs-faire</a>
-                          <a href="projets.html">Mes Projets</a>
-
                       </div>
                   </nav>
 
@@ -58,32 +49,112 @@
                           <ul type="none">
                               <li> &#127874 06/08/1998 (25ans)</li>
                               <li>&#128231<a href="mailto: emma_creteur@hotmail.com">emma_creteur@hotmail.com</a> </li>
-                              <li> &#128205 La bastide des jourdans</li>
+                              <li> &#128205 A proximité d'Aix-en-Provence</li>
                               <li> &#128663 Permis B</li>
 
                           </ul>
                       </div>
                   </div>
-              </header>
+              <div class="categories">
+                <nav>
+                  <ul class="anchors">
+                    <li><a href="#home">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+                <hgroup id="sitetitle">
+                  <h1 class="text-center">Emma Créteur</h1>
+                  <h2 class="text-center">Développeuse web fullstack</h2>
+                </hgroup>
+              </div>
+            </header>
+
+
 
               <main class="a-propos">
 
-                  <section>
-                      <h1> Emma CRETEUR</h1>
-
+                  <section id="home">
+                      <h1> À propos</h1>
                       <div class="carre-contenu-accueil">
-                          <h2></h2>
+                        <p id="p-accueil">
+                          Je suis actuellement en reconversion professionnelle après avoir obtenu un diplôme de niveau bac+4 en biologie. Au cours de cette transition, j'ai décidé de me tourner vers le développement web, un domaine qui m'a toujours intrigué. J'ai choisi de suivre un bootcamp intensif chez Le Wagon, une formation réputée pour sa qualité et sa durée courte. Au sein de ce programme, j'ai développé des compétences solides en HTML, CSS et JavaScript, des langages que j'avais déjà explorés par le passé.
+                          De plus, j'ai eu l'opportunité d'apprendre Ruby on Rails, SQL et de maîtriser le déploiement d'applications web. Les semaines de projets en équipe ont aussi renforcé ma capacité à collaborer efficacement avec d'autres développeurs. Ma motivation est un moteur puissant, renforcée par ma capacité d'apprentissage rapide, résultat de mes années d'études précédentes. J'aborde chaque tâche avec une grande rigueur et une organisation méthodique pour atteindre les objectifs que je me fixe.
+                          <br>
+                          <br>
+                          <br>
+                          Voir mon CV :
+                          <br>
+                          <br>
+                          <a class="cv-grand" href="cv.jpg">
+                            <img src="cv.jpg" width="250px" height="350px" alt="cv miniature"></img>
+                          </a>
+                        </p>
 
-                          <p id="p-accueil">
+                      </div>
 
-                            Je suis actuellement en reconversion professionnelle après avoir obtenu un diplôme de niveau bac+4 en biologie. Au cours de cette transition, j'ai décidé de me tourner vers le développement web, un domaine qui m'a toujours intrigué. J'ai choisi de suivre un bootcamp intensif chez Le Wagon, une formation réputée pour sa qualité et sa durée courte. Au sein de ce programme, j'ai développé des compétences solides en HTML, CSS et JavaScript, des langages que j'avais déjà explorés par le passé.
-                            De plus, j'ai eu l'opportunité d'apprendre Ruby on Rails, SQL et de maîtriser le déploiement d'applications web. Les semaines de projets en équipe ont aussi renforcé ma capacité à collaborer efficacement avec d'autres développeurs. Ma motivation est un moteur puissant, renforcée par ma capacité d'apprentissage rapide, résultat de mes années d'études précédentes. J'aborde chaque tâche avec une grande rigueur et une organisation méthodique pour atteindre les objectifs que je me fixe.
+                      <section id="competences">
+                        <h1> Compétences</h1>
+                        <div class="competences">
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" alt="rails" width="60" height="60"/>
+                          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/>
+                          <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="60" height="60"/>
+                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" alt="VSCode" width="60" height="60"/>
+                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="60" height="60"/>
+                          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/>
+                          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="slack" width="60" height="60"/>
+
+                          <p>
+
+    Développement de l'application
+    Déploiement en production
+    Achat du nom de domaine
+    Hébergement
+    Paiement en ligne
+    Messagerie instantannée
+    Map
+    Envoi de mails
+    Réservations en ligne
+    Barre de recherche
+    Tableau de bord administrateur
+    Site compatible sur mobile
+    Stockage de fichiers dans le Cloud
+    Conformité RGPD
+    Référencement
                           </p>
-                      </div>
+                        </div>
 
-                      <div>
-                          <a href="projets.html" class="cta">VOIR MES PROJETS</a>
-                      </div>
+                      <section id="portfolio">
+
+                        <h1>Portfolio</h1>
+
+                        <div class="card-project">
+                          <a href="https://blooming-woodland-84892-a15a70af19f6.herokuapp.com/" target="_blank">
+                          <img src="https://media.licdn.com/dms/image/sync/D4D27AQHtT2z1cxmr0g/articleshare-shrink_800/0/1694607228014?e=1695294000&v=beta&t=CfZKiXzo-Nj1pzVaW9pA2f9Ugo-Gu2Z51ZTtQYbrVnQ" />
+                          <div class="card-project-infos">
+                            <div>
+                              <h2>VisitForMe</h2>
+                              <p>VisitForMe est une application web mobile créée par mon équipe et moi-même en tant que projet de fin de formation. Cette application facilite le processus de visite d'un appartement en permettant aux utilisateurs de déléguer cette tâche à une personne de confiance.</p>
+                            </div>
+                          </div>
+                        </a>
+                        </div>
+                    </section>
+
+                    <section id="contact">
+
+                      <h1>Me contacter</h1>
+                      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2ceQylcFT-ddjGEz3CQogQd69oquBkLHTm3AjTv-rdr1ttA/viewform?embedded=true" width="640" height="888" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+
+                  </section>
+
 
                   </section>
               </main>
