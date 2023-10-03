@@ -17,7 +17,8 @@ section{
   font-size: 1.25em;
   text-align: justify;
   margin-right: 100px;
-  width: 70%;
+  width: 65%;
+  padding-top: 90px;
 }
 
 .carre-contenu-accueil {
@@ -28,9 +29,25 @@ section{
   flex-direction: row;
 }
 
+.cv-propos img {
+  margin-top:50px;
+  transition: transform 0.3s;
+}
+
+.cv-propos img:hover {
+  margin-top:50px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .cv-propos{
-  width: 50%;
-  }
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px black solid;
+  padding-left: 90px;
+}
 
 /* COMPETENCES */
 
@@ -39,18 +56,38 @@ display: flex;
 justify-content: flex-start;
 list-style-type: disc;
 margin-bottom: 5px;
-width : 70%
+width : 100%;
+font-size: 1.4rem;
+}
+
+.logo-competences {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.logo-competences img {
+  margin-top: 30px;
+  transition: transform 0.3s;
+}
+
+.logo-competences img:hover {
+  transform: scale(1.1);
 }
 
 .list{
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  width:50%
+  width:60%
 }
 
 .contenu{
-  margin-top: 4rem !important;
+  padding-top: 4rem;
+  width: 70%;
+  margin: 0px auto 0px auto;
   display: flex;
   flex-direction: row;
 }
