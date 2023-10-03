@@ -34,11 +34,11 @@ section{
   z-index: -1;
 }
 
-.presentation a:hover::before {
+.presentation a:hover::before{
   width: 100%;
 }
 
-.presentation a:hover {
+.presentation a:hover{
   color: #b4a49c; /* Couleur de texte au survol */
 }
 
