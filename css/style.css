@@ -1,11 +1,3 @@
-@import url('_dropdown.css');
-@import url('_sidebar.css');
-@import url('_card.css');
-@import url('_nav.css');
-@import url('_footer.css');
-@import url('_section.css');
-
-
 * {
     margin: 0;
 }
