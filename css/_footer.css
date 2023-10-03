@@ -1,0 +1,53 @@
+footer {
+  background-color: white;
+  color : #242424;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mention-legale{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  margin-left: 50px;
+}
+
+#logo-footer{
+  margin: 20px;
+}
+
+#pied-de-page {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+}
+
+.lien-icone:hover{
+  opacity: 0.5;
+}
+.lien-icone{
+width: 40px;
+height: 40px;
+padding-right: 10px;
+}
+
+@media screen and (max-width:1080px) {
+
+  #pied-de-page {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .lien-icone{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+
+}
