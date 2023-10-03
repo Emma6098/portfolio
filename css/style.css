@@ -62,6 +62,21 @@ p {
 li {
   font-size: 1.25em;
 }
+
+.conteneur{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteneur h1{
+ margin-bottom: 50px;
+}
+
+.conteneur h2{
+  margin-top: 30px;
+ }
+
 @media screen and (max-width:1080px) {
 
   main {

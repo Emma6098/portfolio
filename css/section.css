@@ -11,6 +11,43 @@ section{
   padding-bottom: 54px;
 }
 
+.presentation{
+  text-align:center;
+  width: 65%;
+}
+
+.presentation a {
+  color: white;
+  position: relative;
+
+}
+
+.presentation a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #F7ECE1;
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.presentation a:hover::before {
+  width: 100%;
+}
+
+.presentation a:hover {
+  color: #b4a49c; /* Couleur de texte au survol */
+}
+
+.accueil{
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
 /* A PROPOS */
 
 #p-accueil {
