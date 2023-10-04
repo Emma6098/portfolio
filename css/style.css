@@ -73,8 +73,6 @@ li {
 @media screen and (max-width:1080px) {
 
   main {
-      animation-duration: 0s;
-      animation-name: slidein;
-      font-size: 30px;
+      font-size: 20px;
     }
 }
