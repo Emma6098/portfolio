@@ -1,0 +1,90 @@
+.card-project {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 400px;
+  transition: transform 0.3s;
+  margin-left: 100px;
+  margin-top: 4rem !important;
+}
+
+.card-project:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-project > a > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: #9c9a9a 1px solid;
+}
+
+.card-project h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #242424;
+}
+
+.card-project p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  color: #242424;
+  font-size: 14px;
+}
+
+
+.card-project .card-project-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-project-infos .card-project-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+
+@media screen and (max-width:1080px) {
+
+  .card-project {
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    width: 600px;
+    transition: transform 0.3s;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+
+  .card-project > a > img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: #9c9a9a 3px solid;
+  }
+
+  .card-project h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #242424;
+  }
+
+  .card-project p {
+    font-size: 25px;
+    opacity: .7;
+    margin: 0;
+    color: #242424;
+  }
+
+}

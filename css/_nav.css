@@ -1,0 +1,91 @@
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  background-color: white;
+  color : #242424;
+  padding: 25px 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  z-index: 2;
+}
+
+
+nav ul {
+  display: inline;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  margin: 0 5px;
+  color: black;
+}
+
+.categories a {
+  margin-left: 30px;
+}
+
+/* ENTETE DEROULANT */
+
+hgroup {
+  position: relative;
+  transition: .15s ease all;
+  padding-top: 65px;
+}
+
+hgroup h1 {
+  font-weight: 300;
+  font-size: 4.5em;
+  color:#b4a49c;
+}
+
+hgroup h2 {
+  font-size: 1.25em;
+  color:#b4a49c;
+}
+
+#masthead.scrolled {
+  height: 65px;
+}
+
+#masthead.scrolled hgroup {
+  opacity: 0;
+  transform: translateY(-75px);
+}
+
+#masthead {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 300px;
+  background: white;
+  transition: .5s ease all;
+}
+
+@media screen and (max-width:1080px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 20px 20px 90px;
+    height: 50px;
+  }
+  header nav img {
+    margin-bottom: 20px;
+  }
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .categories {
+    display: none;
+  }
+}
