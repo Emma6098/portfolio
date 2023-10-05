@@ -61,21 +61,18 @@ ul {
 .show {display:block;}
 
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 720px) {
 
   .dropdown-content {
     display: none;
     position: fixed;
-    left: 100px;
-    right: 150px;
-    top:200px;
+    left: 10px;
+    top:210px;
     background-color:#F7ECE1;
-    min-width: 70%;
-    max-width: 200px;
-    height: 280px;
+    width: 80%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 30px;
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .show {display:block;}
@@ -84,8 +81,8 @@ ul {
 
     display: flex;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
     left: auto;
     top: auto;
     align-items: center;
@@ -98,5 +95,15 @@ ul {
     padding: 12px 0px;
     text-decoration: none;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }

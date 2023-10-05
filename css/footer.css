@@ -7,7 +7,7 @@ footer {
   align-items: center;
 }
 
-.mention-legale{
+.mention-legale a{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,22 +32,34 @@ footer {
 .lien-icone{
 width: 40px;
 height: 40px;
-padding-right: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
 }
 
-@media screen and (max-width:1080px) {
-
-  #pied-de-page {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-  }
+@media screen and (max-width: 720px) {
 
   .lien-icone{
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
   }
 
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .mention-legale a {
+    margin: 20px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }
