@@ -59,7 +59,7 @@ ul {
 .show {display:block;}
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 880px) {
 
   .dropdown-content {
     display: none;
@@ -94,5 +94,13 @@ ul {
     color: black;
     padding: 12px 0px;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 880px) and (max-width: 1100px) {
+
+  .dropbtn img {
+    width: 120px;
+    height:120px;
   }
 }

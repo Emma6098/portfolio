@@ -36,7 +36,7 @@ margin-right: 10px;
 margin-bottom: 10px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 880px) {
 
   .lien-icone{
     width: 50px;

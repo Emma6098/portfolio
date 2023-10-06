@@ -63,7 +63,7 @@ li {
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 880px) {
 
   h1 {
     font-size: 2em;
@@ -74,7 +74,7 @@ li {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 880px) and (max-width: 1023px) {
 
   h1 {
     font-size: 5em;
