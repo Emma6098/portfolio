@@ -101,14 +101,3 @@ hgroup h2 {
     height: 200px;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-  h1 {
-    font-size: 5em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-}

@@ -48,9 +48,7 @@
   text-decoration: none;
 
 }
-.dropdown-content a {
-  padding-left: 10px;
-}
+
 ul {
   padding:0px;
 }
@@ -67,9 +65,11 @@ ul {
     display: none;
     position: fixed;
     left: 10px;
-    top:210px;
+    right: 10px;
+    top:150px;
     background-color:#F7ECE1;
-    width: 80%;
+    max-width: 90%;
+    overflow-wrap: break-word;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 30px;
     font-size: 18px;
@@ -94,16 +94,5 @@ ul {
     color: black;
     padding: 12px 0px;
     text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-  h1 {
-    font-size: 5em;
-  }
-
-  h2 {
-    font-size: 2em;
   }
 }
