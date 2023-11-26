@@ -48,37 +48,31 @@
   text-decoration: none;
 
 }
-.dropdown-content a {
-  padding-left: 10px;
-}
+
 ul {
   padding:0px;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  text-decoration: none;
-  background-color:#e2d1c0
-}
+
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 880px) {
 
   .dropdown-content {
     display: none;
     position: fixed;
-    left: 100px;
-    right: 150px;
-    top:200px;
+    left: 10px;
+    right: 10px;
+    top:150px;
     background-color:#F7ECE1;
-    min-width: 70%;
-    max-width: 200px;
-    height: 280px;
+    max-width: 90%;
+    overflow-wrap: break-word;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 30px;
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .show {display:block;}
@@ -87,8 +81,8 @@ ul {
 
     display: flex;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
     left: auto;
     top: auto;
     align-items: center;
@@ -101,5 +95,12 @@ ul {
     padding: 12px 0px;
     text-decoration: none;
   }
+}
 
+@media screen and (min-width: 880px) and (max-width: 1100px) {
+
+  .dropbtn img {
+    width: 120px;
+    height:120px;
+  }
 }

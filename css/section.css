@@ -1,0 +1,275 @@
+section{
+  padding: 6rem 80px 4rem 80px;
+}
+
+#conteneur-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+#enveloppe-contenu {
+  padding-bottom: 54px;
+}
+
+.presentation{
+  text-align:center;
+  width: 65%;
+  font-size: 1.4rem;
+}
+
+.presentation a {
+  color: white;
+  position: relative;
+
+}
+
+.presentation a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #F7ECE1;
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.presentation a:hover::before{
+  width: 100%;
+}
+
+.presentation a:hover{
+  color: #b4a49c; /* Couleur de texte au survol */
+}
+
+.accueil{
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+/* A PROPOS */
+
+#p-accueil {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-right: 100px;
+  width: 65%;
+}
+
+.carre-contenu-accueil {
+  padding-top: 4rem;
+  width: 70%;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.cv-propos img {
+  margin-top:50px;
+  transition: transform 0.3s;
+}
+
+.cv-propos img:hover {
+  margin-top:50px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cv-propos{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px black solid;
+  padding-left: 90px;
+  font-size: 1.4rem;
+}
+
+/* COMPETENCES */
+
+#competences li {
+display: flex;
+justify-content: flex-start;
+margin-bottom: 5px;
+width : 100%;
+font-size: 1.4rem;
+}
+
+.logo-competences {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.logo-competences img {
+  margin-top: 30px;
+  transition: transform 0.3s;
+}
+
+.logo-competences img:hover {
+  transform: scale(1.1);
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  width:60%
+}
+
+.contenu{
+  padding-top: 4rem;
+  width: 70%;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+i{
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+/* CONTACT */
+#contact{
+text-align: center;
+}
+
+.form{
+ margin-top: 4rem !important;
+}
+
+/* MENTIONS LEGALES */
+
+.contenu-mention {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.contenu-mention p {
+ text-align: start;
+ overflow-wrap: break-word;
+}
+
+.conteneur{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.conteneur h1{
+ margin-bottom: 50px;
+}
+
+.conteneur h2{
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 880px) {
+
+  .presentation{
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  section {
+    font-size: larger;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 30px 4rem 30px;
+  }
+
+  .contenu {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #competences li {
+    font-size: 24px;
+  }
+
+  .list{
+    width: 100%;
+  }
+
+  .logo-competences {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .logo-competences img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #p-accueil {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .carre-contenu-accueil {
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .cv-propos{
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: none;
+    margin-top: 100px;
+    padding: 0px;
+  }
+
+  .cv-grand img{
+    height: auto;
+  }
+
+  .form{
+    width:100%;
+  }
+
+
+  .conteneur h1{
+    font-size: 40px;
+  }
+
+  .contenu-mention h2{
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .contenu-mention p{
+    font-size: 24px;
+  }
+
+  .contenu-mention{
+    max-width: 100%;
+  }
+
+  .conteneur {
+    padding: 40px;
+
+  }
+
+  .accueil {
+    padding-top: 0px;
+  }
+}

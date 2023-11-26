@@ -3,14 +3,23 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Emma Créteur | Développeuse Fullstack </title>
-        <meta name="description" content="Développeuse Fullstack à Distance Freelance">
-        <meta name="keywords" content="développement, development, freelance, web, site, création, emma, créteur, creteur, fullstack, backend, frontend, application, responsive, déploiement, nom de domaine, hébergement, ruby, rails, html, css, javascript, heroku">
+        <title>Emma Créteur | Développeuse Web Fullstack Freelance </title>
+        <meta name="description" content="Développeuse Web Fullstack Freelance passionnée par la création de sites web élégants, fonctionnels et adaptés aux besoins de mes clients.">
+        <meta name="keywords" content="développement, development, freelance, web, site, création, emma, créteur, creteur, fullstack, backend, frontend, application, responsive, déploiement, nom de domaine, hébergement, ruby, rails, html, css, javascript, heroku, 04, 84, 13, aix, manosque, pertuis, la bastide des jourdans, vaucluse, alpes de hautes provence, bouche du rhone">
         <meta name="google-site-verification" content="C7X4D-P2toqdG0to3BEUjABP1XIASljzCnjoGGMlwTs" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/card.css" rel="stylesheet">
+        <link href="css/dropdown.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/nav.css" rel="stylesheet">
+        <link href="css/section.css" rel="stylesheet">
+        <link href="css/sidebar.css" rel="stylesheet">
         <script src="javascript/dropdown.js"></script>
         <script src="javascript/scroll.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,10 +43,10 @@
                   <div id="mySidebar" class="sidebar">
                     <ul>
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      <li><a href="#apropos">À propos</a></li>
-                      <li><a href="#competences">Compétences</a></li>
-                      <li><a href="#portfolio">Portfolio</a></li>
-                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#competences" onclick="closeNav()">Compétences</a></li>
+                      <li><a href="#portfolio" onclick="closeNav()">Portfolio</a></li>
+                      <li><a href="#apropos" onclick="closeNav()">À propos</a></li>
+                      <li><a href="#contact" onclick="closeNav()">Contact</a></li>
                     </ul>
                   </div>
               </div>
@@ -48,18 +57,17 @@
               </button>
               <div id="myDropdown" class="dropdown-content">
                   <ul type="none">
-                      <li>&#128231<a href="mailto: emma_creteur@hotmail.com">emma_creteur@hotmail.com</a> </li>
-                      <li> &#128205 A proximité d'Aix-en-Provence</li>
-                      <li><a href="#contact">Me contacter</a></li>
+                      <li><a href="mailto: emma_creteur@hotmail.com">&#128231&nbsp;emma_creteur@hotmail.com</a> </li>
+                      <li> &#128205 Région d'Aix-en-Provence | Vaucluse | Alpes de Haute Provence</li>
                   </ul>
               </div>
             </div>
             <div class="categories">
               <nav>
                 <ul>
-                  <li><a href="#apropos">À propos</a></li>
                   <li><a href="#competences">Compétences</a></li>
                   <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#apropos">À propos</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
@@ -71,29 +79,21 @@
           </header>
 
           <main>
-
-            <section id="apropos">
-                <h1> À propos</h1>
-                <div class="carre-contenu-accueil">
-                  <p id="p-accueil">
-                    Jeune développeuse web Freelance, je me suis formée au développement web au sein de l'organisme Le Wagon, une formation réputée pour sa qualité.
-                    Au sein de ce programme, j'ai développé des compétences solides en HTML, CSS et JavaScript. J'ai également eu l'occasion d'apprendre à travers divers projets, le langage Ruby et son Framework Rails, le SQL et de maîtriser le déploiement d'applications web.
-                  </p>
-                  <div class="cv-propos">
-                    <p>Si vous souhaitez en savoir plus sur mon parcours jettez un oeil à mon CV 👀:</p>
-                    <a class="cv-grand" href="cv.pdf" target="_blank">
-                      <img src="cv.jpg" width="250px" height="350px" alt="cv miniature"></img>
-                    </a>
-                  </div>
-                </div>
-            </section>
+            <div class="accueil">
+              <p class="presentation">
+                Bienvenue ! Je suis Emma, une développeuse web freelance passionnée par la création de sites web élégants, fonctionnels et adaptés aux besoins des clients.
+                <br>Que vous soyez une petite entreprise à la recherche d'une présence en ligne, un entrepreneur souhaitant lancer un site e-commerce,
+                ou encore une entreprise cherchant un freelance pour renforcer son équipe de développement, je suis là pour vous aider à concrétiser vos projets.
+                <br>Explorez mon <a href="#portfolio">portfolio</a> pour découvrir quelques-uns de mes projets précédents, et n'hésitez pas à me contacter pour discuter de la façon dont je peux vous aider à réaliser votre projet !
+              </p>
+            </div>
 
             <section id="competences">
               <h1> Compétences</h1>
               <div class="contenu">
                 <div class="list">
                   <ul>
-                    <li><i class="fa-solid fa-angle-right"></i> Développement de l'application</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Développement d'application</li>
                     <li><i class="fa-solid fa-angle-right"></i> Déploiement en production</li>
                     <li><i class="fa-solid fa-angle-right"></i> Achat du nom de domaine</li>
                     <li><i class="fa-solid fa-angle-right"></i> Hébergement</li>
@@ -142,39 +142,41 @@
               </div>
             </section>
 
+            <section id="apropos">
+              <h1> À propos</h1>
+              <div class="carre-contenu-accueil">
+                <p id="p-accueil">
+                  Développeuse web Freelance, je me suis formée au développement web au sein de l'organisme Le Wagon, une formation réputée pour sa qualité.
+                  Au sein de ce programme, j'ai développé des compétences solides en HTML, CSS et JavaScript. J'ai également eu l'occasion d'apprendre à travers divers projets, le langage Ruby et son Framework Rails, le SQL et de maîtriser le déploiement d'applications web.
+                </p>
+                <div class="cv-propos">
+                  <p>Si vous souhaitez en savoir plus sur mon parcours jettez un oeil à mon CV 👀:</p>
+                  <a class="cv-grand" href="cv.pdf" target="_blank">
+                    <img src="cv.jpg" width="250px" height="350px" alt="cv miniature"></img>
+                  </a>
+                </div>
+              </div>
+            </section>
+
             <section id="contact">
               <h1>Contact</h1>
               <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSd2ceQylcFT-ddjGEz3CQogQd69oquBkLHTm3AjTv-rdr1ttA/viewform?embedded=true" width="640" height="888" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
             </section>
+
           </main>
         </div>
 
       <footer id="pied-de-page">
-        <div id="mention-legale">
-          <p><b>Mentions légales</b></p>
-          <br>
-          Emma Créteur EI
-          <br>
-          23 Rue de la Pombosse, 84240 La bastide des Jourdans, France
-          <br>
-          emma_creteur@hotmail.com
-          <br>
-          +33 (0)6 79 56 67 68
-          <br>
-          N° SIRET : 98000949200011
-          <br>
-          <br>
-          Site Web hébergé par : GitHub
-          <br>
-          88 Colin P Kelly Junior Street, San Francisco, CA 94107, USA
-          <br>
-          +1 415 448 6673
+        <div class="mention-legale">
+          <a href="mention_legale.html">Mentions légales</a>
         </div>
         <div id="logo-footer">
           <a href="https://www.linkedin.com/in/emma-creteur" target="_blank"> <img class="lien-icone" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
           alt="logo linkedin"/> </a>
           <a href="https://github.com/Emma6098" target="_blank"> <img class="lien-icone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png"
           alt="logo github"/> </a>
+          <a href="https://www.malt.fr/profile/emmacreteur?q=Emma+creteur+&sourceComponent=home_unlogged&searchid=651d7da5e57a8975f9a247a1" target="_blank"> <img class="lien-icone" src="css/images/malt.png"
+          alt="logo malt"/> </a>
         </div>
       </footer>
 
